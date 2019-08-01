@@ -75,20 +75,4 @@ public class AccountController {
     public ServiceResponseMessage createNewProfile(@RequestBody NewProfileReq profileReq){
         return ServiceResponseMessage.createBySuccessCodeMessage(new RbcProfile());
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
