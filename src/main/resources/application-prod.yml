@@ -1,0 +1,17 @@
+spring:
+  mvc:
+    throw-exception-if-no-handler-found: true
+  resources:
+    add-mappings: false
+  datasource:
+    url: jdbc:mysql://localhost:3306/rubbish_community_core?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    name: rubbish_community_core
+    username: rubbish
+    password: community
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+
+mybatis:
+  mapper-locations: classpath:/mapper/*Mapper.xml
+  configuration:
+    map-underscore-to-camel-case: true
