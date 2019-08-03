@@ -12,7 +12,7 @@ import lombok.Data;
 @Data
 @ApiModel(description = "位置和页码数")
 public class LocationAndPageReq {
-    @ApiModelProperty(value = "页面数",required = true,example = "1")
+    @ApiModelProperty(value = "页码数",required = true,example = "1")
     private Integer page;
     @ApiModelProperty(value = "街道",required = true,example = "天才大道")
     private String street;
